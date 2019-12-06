@@ -1,0 +1,232 @@
+@import "../../../styles/global.scss";
+
+@include mq($until: tablet) {
+  .sector-view {
+    width: 90%;
+    margin: 5% auto;
+    padding: 5% 5%;
+    background-color: rgba(245, 237, 237, 0.349);
+    border-radius: 5px;
+    border: 1px solid rgb(175, 175, 175);
+  }
+
+  .title-sector-view {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -2px;
+    padding-left: 10%;
+  }
+
+  .table-data-sectors {
+    width: 100%;
+    margin: 20px auto;
+    // color: whitesmoke;
+
+    & .tr-title-sectors {
+      text-align: center;
+      align-content: center;
+      font-size: 1.3rem;
+      color: darkblue;
+    }
+
+    & td {
+      padding: 5px 0;
+      border-bottom: 1px solid black;
+    }
+  }
+
+  .title-sector {
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: gainsboro;
+    font-weight: 400;
+  }
+
+  .link-to-map {
+    text-decoration: none;
+  }
+  .link-to-sector {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+
+  .add-sector-link {
+    width: 80%;
+    margin: 0 auto 15px;
+    text-align: right;
+
+    & a {
+      text-decoration: none;
+      color: midnightblue;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+  }
+
+  .map-link {
+    & a {
+      text-decoration: none;
+    }
+  }
+
+  .sectors-pages {
+    text-align: center;
+    margin-bottom: 15px;
+
+    & .button-prev-sector {
+      background: midnightblue;
+      padding: 10px;
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      margin-right: 5px;
+    }
+    & .button-next-sector {
+      background: midnightblue;
+      padding: 10px;
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      margin-right: 5px;
+    }
+  }
+
+  .only-desktop {
+    display: none;
+  }
+
+  .only-mobile {
+    margin-left: 5px;
+  }
+
+  .not-found {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: darkblue;
+    text-align: center;
+
+    & .new-sector-link {
+      font-weight: 600;
+      color: darkgrey;
+      display: block;
+      margin-top: 10px;
+      text-decoration: none;
+    }
+  }
+}
+
+@include mq($from: tablet) {
+  .sector-view {
+    position: relative;
+    width: 80%;
+    background-color: gainsboro;
+    margin: 10px auto;
+    border: 1px solid darkgray;
+    border-radius: 3px;
+  }
+  .title-sector-view {
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 800;
+    letter-spacing: -5px;
+    padding-left: 20%;
+
+    & .title-sector {
+      font-size: 7rem;
+      color: darkblue;
+      font-weight: 200;
+      letter-spacing: -5px;
+    }
+  }
+
+  .table-data-sectors {
+    width: 80%;
+    margin: 50px auto;
+
+    & .tr-title-sectors {
+      text-align: center;
+      align-content: center;
+      font-size: 1.5rem;
+      color: darkblue;
+    }
+
+    & td {
+      padding: 10px 0;
+      text-align: center;
+      border-bottom: 1px solid gray;
+    }
+
+    & .link-to-sector {
+      text-decoration: none;
+      color: midnightblue;
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+
+    .sector-description-body {
+      width: 50%;
+      text-align: justify;
+    }
+
+    .crag-name {
+      width: 20%;
+    }
+  }
+
+  .sectors-pages {
+    text-align: center;
+    margin-bottom: 15px;
+
+    & .button-prev-sector {
+      background: midnightblue;
+      padding: 10px;
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+    & .button-next-sector {
+      background: midnightblue;
+      padding: 10px;
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+  }
+
+  .new-sector-link {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .add-sector-link {
+    width: 70%;
+    margin: 0 auto;
+    text-align: right;
+
+    & a {
+      text-decoration: none;
+      color: midnightblue;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+  }
+
+  .head-mobile {
+    display: none;
+  }
+
+  .only-mobile {
+    display: none;
+  }
+}

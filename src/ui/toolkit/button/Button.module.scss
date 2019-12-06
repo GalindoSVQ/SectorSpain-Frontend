@@ -1,0 +1,95 @@
+@import '../../../styles/global.scss';
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    font-weight: $medium;
+    line-height: 1.5;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    transition-property: opacity, background-color, box-shadow;
+    transition-duration: 180ms;
+    transition-timing-function: ease-in;
+  
+    &.disabled {
+      opacity: 0.3;
+    }
+  
+    &:hover:not(.disabled) {
+      opacity: 0.7;
+    }
+  
+    &.big {
+      height: 44px;
+      padding: 0 16px;
+  
+      & > * + * {
+        margin-left: 8px;
+      }
+  
+      svg {
+        height: 24px;
+        width: 24px;
+      }
+    }
+  
+    &.small {
+      height: 28px;
+      padding: 0 8px;
+      font-size: 12px;
+  
+      & > * + * {
+        margin-left: 8px;
+      }
+  
+      svg {
+        height: 16px;
+        width: 16px;
+      }
+    }
+  
+    &.disabled {
+      cursor: initial;
+    }
+  
+    &.raised {
+      box-shadow: 0 2px 4px 0 rgba(0, 10, 18, 0.12);
+    }
+  
+    &.primary {
+      background-color: var(--primary);
+      color: var(--background);
+  
+      &.disabled {
+        background-color: #868e96;
+      }
+    }
+  
+    &.secondary {
+      background-color: $secondary;
+      color: var(--primary);
+    }
+  
+    &.transparent {
+      color: inherit;
+      background-color: transparent;
+    }
+  
+    &.danger {
+      color: var(--primary-danger);
+    }
+    &.translucentlight {
+      color: var(--background);
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    &.translucentdark {
+      color: #4d4d4d;
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+  }

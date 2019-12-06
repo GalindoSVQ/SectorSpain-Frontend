@@ -1,0 +1,87 @@
+@import '../../../styles/global.scss';
+
+
+@include mq($until:tablet) {
+
+    .sectors-list h1 {
+        font-size: 3rem;
+        color: rgb(7, 0, 104);
+        text-align: center;
+        margin-top: 20px;
+        font-weight: 600;
+
+    }
+
+    .sectors-list h2 {
+        font-size: 1.5rem;
+        color: rgb(7, 0, 104);
+        text-align: center;
+        margin-top: 20px;
+        padding-bottom: 30px;
+        margin-top: -10px;
+
+
+    }
+
+    .sectors-list .no-result {
+        font-size: 1.3rem;
+        margin: 100px 10px;
+        text-align: center;
+        color: rgb(22, 13, 139);
+        width: 90%;
+
+        & p {
+            padding: 15px;
+        }
+
+        & a {
+            color: rgb(17, 23, 78);
+        }
+
+    }
+
+    .sectors-list .yes-result {
+        font-size: 1.3rem;
+        margin: 0 10px;
+        text-align: center;
+        color: rgb(22, 13, 139);
+
+        & p {
+            padding: 15px;
+        }
+    }
+
+    .line {
+        border: 1px solid rgb(214, 177, 10);
+        border-radius: 5px;
+        width: 40%;
+        margin: -10px auto 50px auto;
+    }
+
+    .table-results {
+
+        border-collapse: collapse;
+        width: 100%;
+
+        .titles td {
+            font-weight: bold;
+            font-size: 1.2rem;
+            border-bottom: 1pt solid black;
+            
+        }
+
+        & .sons-results {
+            font-size: 1rem;
+            line-height: 1.5;
+            
+        }
+
+        tr:nth-child(even) {
+            background-color: rgb(172, 184, 206);
+
+        }
+    }
+
+
+}
+

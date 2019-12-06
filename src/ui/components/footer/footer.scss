@@ -1,0 +1,69 @@
+@import "../../../styles/global";
+
+@include mq($until: tablet) {
+  .footer-desktop {
+    display: none;
+  }
+}
+
+@include mq($from: tablet) {
+  .footer-desktop {
+    width: 100%;
+    background-color: $background;
+    padding: 3px 0;
+    position: fixed;
+    bottom: 0;
+  }
+
+  .footer-container {
+    width: 80%;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .resume {
+    font-size: 1.5rem;
+    color: white;
+    width: 40%;
+    text-align: right;
+    display: flex;
+    flex-flow: column;
+
+    & .title {
+      font-weight: 800;
+      letter-spacing: -0.8px;
+    }
+
+    & .notice {
+      font-size: 0.9rem;
+      font-weight: 200;
+      letter-spacing: 1px;
+    }
+  }
+
+  .rrss {
+    width: 60%;
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .rrss ul {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 0.9rem;
+    margin-top: 10px;
+
+    & li {
+      margin-right: 30px;
+      filter: invert(1);
+
+      &:hover {
+        filter: invert(0);
+      }
+    }
+  }
+}

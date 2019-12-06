@@ -1,0 +1,297 @@
+@import "../../../styles/global.scss";
+
+@include mq($until: tablet) {
+  .routes-view {
+    width: 90%;
+    margin: 5% auto;
+    // padding: 5% 5%;
+    background-color: rgba(245, 237, 237, 0.349);
+    border-radius: 5px;
+    border: 1px solid rgb(175, 175, 175);
+  }
+  .title-routes-view {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -2px;
+    padding-left: 20%;
+
+    & .title-routes {
+      font-size: 2.5rem;
+      color: darkblue;
+      font-weight: 200;
+      letter-spacing: -3px;
+    }
+  }
+
+  .sector-details {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .list-routes {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .description-sector {
+    font-size: 1rem;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .table-sector-details {
+    & th {
+      width: 5%;
+      padding-top: 5px;
+      vertical-align: top;
+    }
+
+    & td {
+      width: 95%;
+      font-size: 1rem;
+      font-weight: 200;
+      text-align: justify;
+      padding: 5px;
+
+      & a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+
+  .table-routes-detail {
+    width: 95%;
+    margin: 5px auto;
+
+    & thead {
+      font-size: 1rem;
+      color: darkblue;
+      border-bottom: 1px solid darkblue;
+      font-weight: 600;
+    }
+
+    & td {
+      padding: 8px 0;
+    }
+
+    & tbody {
+      //   padding: 5px 0;
+      border-bottom: 1px solid gainsboro;
+      font-size: 1rem;
+    }
+  }
+
+  .line-routelist {
+    width: 70%;
+    margin: 50px auto;
+    border: 0.5px solid darkblue;
+  }
+
+  .add-route-link {
+    width: 70%;
+    margin: 10px auto 50px;
+    text-align: right;
+
+    & a {
+      text-decoration: none;
+      color: midnightblue;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+  }
+
+  .route-pages {
+    text-align: center;
+    margin-bottom: 15px;
+
+    & .button-prev-route {
+      background: midnightblue;
+      padding: 10px;
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      margin-right: 5px;
+    }
+    & .button-next-route {
+      background: midnightblue;
+      padding: 10px;
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      margin-right: 5px;
+    }
+  }
+
+  .warning {
+    color: red;
+    font-size: 1.8rem;
+  }
+
+  .link-map a {
+    text-decoration: none;
+  }
+
+  .only-desktop {
+    display: none;
+  }
+}
+
+@include mq($from: tablet) {
+  .routes-view {
+    position: relative;
+    width: 80%;
+    background-color: gainsboro;
+    margin: 10px auto 90px;
+    border: 1px solid darkgray;
+    border-radius: 3px;
+  }
+  .title-routes-view {
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 800;
+    letter-spacing: -5px;
+    padding-left: 20%;
+
+    & .title-routes {
+      font-size: 7rem;
+      color: darkblue;
+      font-weight: 200;
+      letter-spacing: -5px;
+    }
+  }
+
+  .sector-details {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .list-routes {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .description-sector {
+    font-size: 1.8rem;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .table-sector-details {
+    & th {
+      width: 10%;
+      padding-top: 15px;
+      padding-right: 30px;
+      vertical-align: top;
+    }
+
+    & td {
+      width: 80%;
+      font-size: 1.2rem;
+      font-weight: 200;
+      text-align: justify;
+      padding: 5px;
+
+      & a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+
+  .table-routes-detail {
+    width: 80%;
+    margin: 20px auto;
+    & thead {
+      font-size: 1.5rem;
+      color: darkblue;
+      border-bottom: 1px solid darkblue;
+    }
+
+    & td {
+      padding: 10px 0;
+    }
+
+    & tbody {
+      padding: 10px 0;
+      text-align: center;
+      border-bottom: 1px solid gray;
+      font-size: 1.5rem;
+    }
+  }
+
+  .line-routelist {
+    width: 70%;
+    margin: 50px auto;
+    border: 0.5px solid darkblue;
+  }
+
+  .add-route-link {
+    width: 70%;
+    margin: 10px auto 50px;
+    text-align: right;
+
+    & a {
+      text-decoration: none;
+      color: midnightblue;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+  }
+
+  .route-pages {
+    text-align: center;
+    margin-bottom: 15px;
+
+    & .button-prev-route {
+      background: midnightblue;
+      padding: 10px;
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+    & .button-next-route {
+      background: midnightblue;
+      padding: 10px;
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+  }
+
+  .warning {
+    color: red;
+    font-size: 1.8rem;
+  }
+
+  .link-map a {
+    text-decoration: none;
+  }
+
+  .only-mobile {
+    display: none;
+  }
+
+  .not-found {
+    margin: 20px 0;
+    font-size: 1.5rem;
+    color: darkblue;
+    text-align: center;
+    & a {
+      text-decoration: none;
+      color: midnightblue;
+      font-weight: 800;
+    }
+  }
+}

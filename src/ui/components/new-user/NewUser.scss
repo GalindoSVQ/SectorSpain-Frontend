@@ -1,0 +1,11 @@
+@import "../../../styles/global.scss";
+
+@include mq($until: tablet) {
+  .message-new-climber {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+@include mq($from: tablet) {
+}

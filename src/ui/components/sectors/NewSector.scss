@@ -1,0 +1,133 @@
+@import "../../../styles/global.scss";
+
+@include mq($until: tablet) {
+  .add-sector-view {
+    // position: relative;
+    width: 90%;
+    background-color: gainsboro;
+    margin: 5px auto;
+    border: 1px solid darkgray;
+    border-radius: 3px;
+
+    & .title-sector-add {
+      text-transform: uppercase;
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: -3px;
+      text-align: center;
+
+      & .title-province {
+        font-size: 4rem;
+        color: darkblue;
+        font-weight: 300;
+        letter-spacing: -5px;
+      }
+    }
+  }
+
+  .form-add-sector {
+    display: flex;
+    flex-flow: column nowrap;
+    // align-items: center;
+    // width: 100%;
+    margin: 20px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+
+    & input {
+      padding: 5px 10px;
+      font-size: 1rem;
+      color: darkblue;
+      text-transform: uppercase;
+      // width: 50%;
+    }
+  }
+
+  .buttons-new-sector {
+    margin: 20px auto 0;
+  }
+
+  .submit-add-sector {
+    margin: 5px;
+    padding: 8px 15px;
+    background: none;
+    border: 1px solid darkblue;
+    font-weight: 800;
+    color: darkblue;
+    cursor: pointer;
+  }
+
+  .description-new-sector {
+    height: 100px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    color: darkblue;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+  }
+}
+
+@include mq($from: tablet) {
+  .add-sector-view {
+    position: relative;
+    width: 80%;
+    background-color: gainsboro;
+    margin: 1px auto;
+    border: 1px solid darkgray;
+    border-radius: 3px;
+
+    & .title-sector-add {
+      text-transform: uppercase;
+      font-size: 5rem;
+      font-weight: 600;
+      letter-spacing: -5px;
+      padding-left: 20%;
+
+      & .title-sector {
+        font-size: 7rem;
+        color: darkblue;
+        font-weight: 300;
+        letter-spacing: -5px;
+      }
+    }
+  }
+
+  .form-add-sector {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 60%;
+    margin: 1px auto;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+
+    & input,
+    select {
+      padding: 5px 10px;
+      font-size: 1rem;
+      color: darkblue;
+      text-transform: uppercase;
+      width: 50%;
+    }
+  }
+
+  .submit-add-sector {
+    margin: 5px;
+    padding: 5px;
+    background: none;
+    border: 1px solid darkblue;
+    font-weight: 800;
+    color: darkblue;
+    cursor: pointer;
+  }
+
+  .description-new-sector {
+    height: 50px;
+    width: 50%;
+    padding: 5px 10px;
+    font-size: 1rem;
+    color: darkblue;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,111 @@
+@import "../../../styles/global.scss";
+
+@include mq($until: tablet) {
+  .head {
+    // width: 80%;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    background: $background;
+    padding-top: 5px;
+    // z-index: 3;
+  }
+
+  .title {
+    color: white;
+  }
+
+  .head .logo-title {
+    display: -webkit-flex;
+    display: flex;
+    align-items: baseline;
+  }
+
+  .head .logo-title .logo {
+    width: 15%;
+    margin-left: 2%;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      transform: scale(1.05);
+    }
+  }
+
+  .head .logo-title .title h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: -2px;
+    float: right;
+  }
+
+  .head .logo-title .title h1 span {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+}
+
+// ************* DESKTOP VIEW *******************
+
+@include mq($from: tablet) {
+  .head {
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    background-color: $background;
+    z-index: 2;
+  }
+
+  .head .logo-title {
+    display: -webkit-flex;
+    display: flex;
+    align-items: baseline;
+    color: white;
+  }
+
+  .head .logo-title .logo {
+    width: 15%;
+    margin-left: 10%;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      transform: scale(1.05);
+    }
+  }
+
+  .head .logo-title .title h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: -2px;
+    float: right;
+  }
+
+  .head .logo-title .title h1 span {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+}

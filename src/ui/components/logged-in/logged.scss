@@ -1,0 +1,142 @@
+@import "../../../styles//global.scss";
+
+@include mq($until: tablet) {
+  .user-table {
+    width: 80%;
+    margin: 10% auto;
+    background-color: $gray300;
+    border-radius: 2px;
+    padding: 15px 20px 10px;
+  }
+
+  .button-logout {
+    height: 40px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    background-color: DarkSlateBlue;
+    color: white;
+  }
+
+  .user-detail {
+    display: flex;
+    flex-flow: column;
+    width: 80%;
+    margin: 5% auto 0;
+    font-size: 1.5rem;
+    font-size: 1.2rem;
+    & label {
+      text-transform: uppercase;
+      margin-top: 5px;
+    }
+  }
+
+  .input-user-detail {
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    background: rgb(209, 194, 194);
+    border: none;
+    width: auto;
+    color: darkblue;
+  }
+
+  .buttom-update {
+    width: 50%;
+    margin: 25px auto 0;
+    height: 40px;
+    padding: 5px 10px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    border: none;
+    background-color: DarkSlateBlue;
+    color: white;
+    cursor: pointer;
+  }
+
+  .message-patch {
+    text-align: center;
+    display: block;
+    font-size: 1rem;
+    font-weight: 200;
+    color: darkblue;
+    letter-spacing: 2px;
+    margin-top: 20px;
+  }
+}
+
+@include mq($from: tablet) {
+  .button-logout {
+    position: absolute;
+    right: 20px;
+    height: 40px;
+    padding: 5px 10px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    border: none;
+    background-color: DarkSlateBlue;
+    color: white;
+    cursor: pointer;
+  }
+
+  .buttom-update {
+    width: 50%;
+    margin: 25px auto 0;
+    height: 40px;
+    padding: 5px 10px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    border: none;
+    background-color: DarkSlateBlue;
+    color: white;
+    cursor: pointer;
+  }
+
+  .user-table {
+    position: relative;
+    width: 80%;
+    margin: 10px auto;
+    background-color: $gray300;
+    border-radius: 2px;
+    padding: 20px;
+  }
+
+  .user-detail {
+    width: 30%;
+    margin: 50px auto 0;
+    font-size: 1.5rem;
+    padding: 10px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+
+    & label {
+      text-transform: uppercase;
+      margin-top: 20px;
+    }
+  }
+
+  .input-user-detail {
+    font-size: 1.5rem;
+    padding: 5px 15px;
+    background: white;
+    border: none;
+    width: auto;
+    color: darkblue;
+  }
+
+  .message-patch {
+    text-align: center;
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 200;
+    color: darkblue;
+    letter-spacing: 2px;
+    margin-top: 20px;
+  }
+
+  .head-mobile {
+    display: none;
+  }
+}

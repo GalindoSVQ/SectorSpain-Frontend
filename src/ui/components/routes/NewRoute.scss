@@ -1,0 +1,152 @@
+@import "../../../styles/global.scss";
+
+@include mq($until: tablet) {
+  .add-route-view {
+    width: 90%;
+    background-color: gainsboro;
+    margin: 5px auto;
+    border: 1px solid darkgray;
+    border-radius: 3px;
+
+    & .title-route-add {
+      text-transform: uppercase;
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: -3px;
+      padding-left: 20%;
+
+      & .title-province {
+        font-size: 4rem;
+        color: darkblue;
+        font-weight: 300;
+        letter-spacing: -5px;
+      }
+    }
+  }
+
+  .form-add-route {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 20px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+
+    & input {
+      padding: 5px 10px;
+      font-size: 1rem;
+      color: darkblue;
+      text-transform: uppercase;
+    }
+    & select {
+      font-size: 1rem;
+      padding: 5px 10px;
+      color: darkblue;
+      text-transform: uppercase;
+      width: 100%;
+    }
+    & textarea {
+      height: 50px;
+      width: 100%;
+      padding: 5px 10px;
+      font-size: 1rem;
+      color: darkblue;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+    }
+  }
+
+  .buttons-new-route {
+    margin-top: 20px;
+    text-align: center;
+    & button {
+      margin: 5px;
+      padding: 8px 15px;
+      background: none;
+      border: 1px solid darkblue;
+      font-weight: 800;
+      color: darkblue;
+      cursor: pointer;
+    }
+  }
+
+  .message-patch {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+
+@include mq($from: tablet) {
+  .add-route-view {
+    position: relative;
+    width: 80%;
+    background-color: gainsboro;
+    margin: 5px auto;
+    border: 1px solid darkgray;
+    border-radius: 3px;
+
+    & .title-route-add {
+      text-transform: uppercase;
+      font-size: 5rem;
+      font-weight: 600;
+      letter-spacing: -5px;
+      padding-left: 20%;
+
+      & .title-province {
+        font-size: 7rem;
+        color: darkblue;
+        font-weight: 300;
+        letter-spacing: -5px;
+      }
+    }
+  }
+
+  .form-add-route {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 60%;
+    margin: 20px auto;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+
+    & input {
+      padding: 5px 10px;
+      font-size: 1rem;
+      color: darkblue;
+      text-transform: uppercase;
+      width: 50%;
+    }
+    & select {
+      padding: 5px 10px;
+      font-size: 1rem;
+      color: darkblue;
+      text-transform: uppercase;
+      width: 50%;
+    }
+  }
+
+  .submit-add-route {
+    margin: 5px;
+    padding: 5px;
+    background: none;
+    border: 1px solid darkblue;
+    font-weight: 800;
+    color: darkblue;
+    cursor: pointer;
+  }
+
+  .description-new-route {
+    height: 50px;
+    width: 50%;
+    padding: 5px 10px;
+    font-size: 1rem;
+    color: darkblue;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+  }
+
+  .message-patch {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,40 @@
+@import "../../../styles/global.scss";
+
+@include mq($from: tablet) {
+  nav {
+    // padding: 1em;
+    // font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 5em;
+  }
+
+  nav ul {
+    display: flex;
+    // list-style: none;
+    flex-direction: row;
+  }
+
+  nav ul li {
+    display: block;
+    padding: 0.3rem;
+    margin-right: 0.6rem;
+    text-transform: uppercase;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+
+    & a {
+      color: white;
+    }
+  }
+
+  nav li:hover {
+    background: rgb(84, 94, 180);
+    color: rgb(230, 230, 230);
+  }
+}

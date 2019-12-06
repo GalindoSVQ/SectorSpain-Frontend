@@ -1,0 +1,152 @@
+@import "../../../styles/global.scss";
+
+@include mq($until: tablet) {
+  .seeker-view {
+    width: 90%;
+    margin: 5% auto;
+    padding: 5% 5%;
+    background-color: rgba(245, 237, 237, 0.349);
+    border-radius: 5px;
+    border: 1px solid rgb(175, 175, 175);
+  }
+  .title-seeker-view {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+  }
+
+  .table-seeker-view {
+    & tr {
+      display: flex;
+      flex-flow: column wrap;
+      & td:first-child {
+        margin: 15px 0;
+      }
+      & td:last-child {
+        color: black;
+        font-size: 1.2rem;
+        font-weight: 200;
+        letter-spacing: 2px;
+      }
+    }
+  }
+
+  .table-routes-seeker {
+    width: 100%;
+    margin: 5px auto;
+
+    & thead {
+      font-size: 1rem;
+      color: darkblue;
+      border-bottom: 1px solid darkblue;
+      font-weight: 600;
+    }
+
+    & td {
+      padding: 8px 0;
+    }
+
+    & tbody {
+      //   padding: 5px 0;
+      border-bottom: 1px solid gainsboro;
+      font-size: 1rem;
+    }
+  }
+
+  .inputs-seeker {
+    position: absolute;
+    right: 30px;
+    font-size: 1.2rem;
+    width: 200px;
+    padding: 3px 5px;
+
+    background: navy;
+    color: whitesmoke;
+    border: none;
+  }
+}
+
+@include mq($from: tablet) {
+  .seeker-view {
+    position: relative;
+    width: 80%;
+    background-color: gainsboro;
+    margin: 10px auto 100px;
+    border: 1px solid darkgray;
+    border-radius: 3px;
+  }
+  .title-seeker-view {
+    text-transform: uppercase;
+    font-size: 7rem;
+    font-weight: 300;
+    letter-spacing: -7px;
+    padding-left: 20%;
+    margin-bottom: 50px;
+  }
+
+  .seeker-options {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    color: darkblue;
+  }
+
+  .table-seeker-view {
+    & tr {
+      display: flex;
+      flex-flow: column wrap;
+      & td:first-child {
+        margin: 15px 0;
+      }
+      & td:last-child {
+        color: black;
+        font-size: 1.6rem;
+        font-weight: 200;
+        letter-spacing: 2px;
+      }
+    }
+  }
+
+  .table-routes-seeker {
+    width: 100%;
+    margin: 20px auto;
+
+    & thead {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: darkblue;
+      border-bottom: 1px solid darkblue;
+    }
+
+    & td {
+      padding: 10px 0;
+    }
+
+    & tbody {
+      padding: 10px 0;
+      text-align: center;
+      border-bottom: 1px solid gray;
+      font-size: 1.5rem;
+    }
+  }
+
+  .inputs-seeker {
+    font-size: 1.3rem;
+    padding: 5px 10px;
+    margin-left: 5%;
+    background: navy;
+    color: whitesmoke;
+    border: none;
+  }
+
+  .head-mobile {
+    display: none;
+  }
+
+  .only-mobile {
+    display: none;
+  }
+}

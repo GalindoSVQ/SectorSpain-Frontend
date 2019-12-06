@@ -1,0 +1,23 @@
+@import "../../../styles/global.scss";
+
+@include mq($until: tablet) {
+  // .background-desktop {
+  //   height: 100%;
+  //   width: 100%;
+  //   z-index: $zBackground;
+  //   opacity: 0.5;
+  //   position: absolute;
+  //   top: 0;
+  // }
+}
+
+@include mq($from: tablet) {
+  .background-desktop {
+    height: 100%;
+    width: 100%;
+    z-index: $zBackground;
+    opacity: 0.7;
+    position: fixed;
+    top: 0;
+  }
+}

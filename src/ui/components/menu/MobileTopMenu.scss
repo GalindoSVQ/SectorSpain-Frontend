@@ -1,0 +1,36 @@
+@import "../../../styles/global.scss";
+
+@include mq($until: tablet) {
+  .StyledMenu {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background: rgb(10, 23, 68);
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .StyledMenu a {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1rem 0.7rem;
+    font-weight: lighter;
+    letter-spacing: 0.1rem;
+    color: white;
+    text-decoration: none;
+
+    & span {
+      margin-right: 15px;
+    }
+  }
+
+  .StyledMenu a:first-child {
+    margin-top: 80px;
+  }
+
+  .StyledMenu a:last-child {
+    margin-bottom: 30px;
+  }
+}
