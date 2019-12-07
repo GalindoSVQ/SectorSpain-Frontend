@@ -75,7 +75,7 @@ function Seeker() {
       ) : (
         <div className="seeker box">
           <div className="box">
-            <h1> ROCK CLIMB FINDER IN SPAIN TEST </h1>
+            <h1> ROCK CLIMB FINDER IN SPAIN </h1>
 
             <form className="form-seeker">
               <label htmlFor="select-provinces">CHOOSE PROVINCE</label>
