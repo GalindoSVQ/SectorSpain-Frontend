@@ -94,7 +94,6 @@ function NewCrag({
               maxLength="45"
               {...bindLatitude}
               required
-              value="0"
             />
             <label htmlFor="longitude">Crag Longitude</label>
             <input
@@ -104,7 +103,6 @@ function NewCrag({
               maxLength="45"
               {...bindLongitude}
               required
-              value="0"
             />
             <label htmlFor="city">City</label>
             <input

@@ -8,4 +8,10 @@
 }
 
 @include mq($from: tablet) {
+  .message-new-climber {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.3rem;
+    color: darkblue;
+  }
 }
