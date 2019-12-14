@@ -34,10 +34,7 @@ function AuthRoutes() {
         <DesktopLayout>
           <Switch>
             <Route exact path="/" component={DesktopHome} />
-            <Route
-              path="https://sectorspain.netlify.com/map"
-              component={DesktopMap}
-            />
+            <Route path="/map" component={DesktopMap} />
             <Route exact path="/crags" component={BrowserCrags} />
             <PrivateRoute
               exact
