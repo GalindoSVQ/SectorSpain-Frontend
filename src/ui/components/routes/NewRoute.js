@@ -45,12 +45,15 @@ function NewRoute({
         .post(
           `${http.defaults.baseURL}api/routes/add/`,
           {
-            name: name,
-            description: description,
+            name: name.charAt(0).toUpperCase() + name.toLowerCase().slice(1),
+            description:
+              description.charAt(0).toUpperCase() +
+              description.toUpperCase().slice(1),
             grade: grade,
             height: height,
             nanchor: nanchor,
-            sector_id: sector
+            sector_id: sector,
+            rating: 1
           },
           {
             headers: { Authorization: http.defaults.headers["Authorization"] }

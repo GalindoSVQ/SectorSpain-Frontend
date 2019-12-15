@@ -209,7 +209,7 @@ function RouteList({
                     <td>NAME</td>
                     <td>GRADE</td>
                     <td>HEIGHT</td>
-                    <td>NANCHOR</td>
+                    <td>ANCHORS</td>
                     <td>RATING</td>
                   </tr>
                 </thead>

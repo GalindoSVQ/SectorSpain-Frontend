@@ -46,11 +46,14 @@ function NewSector({
         .post(
           `${http.defaults.baseURL}api/sectors/add/`,
           {
-            name: name,
-            description: description,
+            name: name.charAt(0).toUpperCase() + name.toLowerCase().slice(1),
+            description:
+              description.charAt(0).toUpperCase() +
+              description.toLowerCase().slice(1),
             latitude: latitude,
             longitude: longitude,
             orientation: orientation,
+            rope: 80,
             picture: topo,
             crag_id: cragId
           },
@@ -108,7 +111,6 @@ function NewSector({
               maxLength="45"
               {...bindLatitude}
               required
-              value="0"
             />
             <label htmlFor="longitude">Sector Longitude</label>
             <input
@@ -118,7 +120,6 @@ function NewSector({
               maxLength="45"
               {...bindLongitude}
               required
-              value="0"
             />
             <label htmlFor="orientationSector">Orientation</label>
             <select
